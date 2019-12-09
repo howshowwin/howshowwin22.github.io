@@ -1,0 +1,172 @@
+.frame {
+    height: 600px;
+    width: 600px;
+    transform: scale(1.8);
+    position: absolute;
+    left: 030%;
+    top: 30%;
+    /* margin-top: -360px; */
+}
+
+
+
+.newface1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-73%, -45%);
+    z-index: 5;
+}
+
+.newface2 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    transform: rotate(2deg);
+    z-index: 6;
+    animation: hair 10s ease-out infinite;
+
+}
+
+.bg {
+    position: absolute;
+    top: 24.5%;
+    left: 108%;
+    transform: translate(-56%, -47%);
+}
+
+.hair1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(0%, 0%) rotate(-2deg);
+    z-index: 4;
+    animation: hair1 4s ease-out infinite;
+}
+
+.hair2 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%) rotate(-3deg);
+    z-index: 7;
+    animation: hair 3s ease-out infinite;
+}
+
+.hair3 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(0%, 0%) rotate(-2deg);
+    z-index: 4;
+    animation: hair2 7s ease-out infinite;
+}
+
+.box1 {
+    width: 235px;
+    height: 55px;
+    z-index: 9;
+    border-radius: 0 0 0 30;
+    background: #17344a;
+    position: absolute;
+    top: 46%;
+    left: 64%;
+    transform: rotate(20deg);
+}
+
+.box2 {
+    width: 235px;
+    /* border: red 1px solid; */
+    height: 200px;
+    z-index: 999;
+    transform:  rotate(-66deg);
+    
+    background: #002c40;
+    position: absolute;
+    top: -10%;
+    left: -26%;
+
+}
+
+.train {
+    position: absolute;
+    top: 15%;
+    left: -15%;
+    transform: translate(250%, 160%);
+    z-index: 5;
+    animation: train 3s ease-out infinite;
+
+}
+
+@keyframes train {
+
+    0%,
+    20%,
+    100% {
+        transform: rotate(0deg) translate();
+    }
+
+    60%,
+    100% {
+        transform: rotate(0deg) translate(0px, 0px) scale(1);
+    }
+
+    22%,
+    66% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+@keyframes hair {
+
+    0%,
+    50%,
+    100% {
+        transform: rotate(0deg) translate();
+    }
+
+    40%,
+    50% {
+        transform: rotate(0deg) translate(0px, 0px) scale(1);
+    }
+
+    40%,
+    60% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+@keyframes hair1 {
+
+    0% {
+        transform: translate(0%, 0%) rotate(-2deg);
+    }
+
+    50% {
+        transform: translate(-20px, 40px) rotate(8deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(-2deg);
+    }
+
+
+}
+
+@keyframes hair2 {
+
+    0% {
+        transform: translate(0%, 0%) rotate(-2deg);
+    }
+
+    50% {
+        transform: translate(-10px, -40px) rotate(8deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(-2deg);
+    }
+
+
+}

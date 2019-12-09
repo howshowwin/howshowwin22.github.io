@@ -1,0 +1,37 @@
+.page2_left{
+    
+}
+.img_page2_1{
+    position: absolute;
+    width: 860px;
+    right: -20px;
+    bottom: -120px;
+    transition: 0.1s;
+}
+.img_page2_2{
+    position: absolute;
+    width: 800px;
+    right: -20px;
+    bottom: -120px;
+    
+}
+.img_page2_3{
+    position: absolute;
+    width: 800px;
+    right: -20px;
+    bottom: -120px;
+   
+   
+}
+.img_page2_4{
+    position: absolute;
+    width: 860px;
+    right: -20px;
+    bottom: -120px;
+}
+.img_page2_5{
+    position: absolute;
+    width: 800px;
+    right: -20px;
+    bottom: -120px;
+}

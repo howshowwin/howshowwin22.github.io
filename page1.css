@@ -1,0 +1,159 @@
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.container h1:nth-child(1) {
+  color: #355c7d;
+  font-family: "Fira Code", monospace;
+  font-weight: 800;
+  font-size: 20px;
+  position: absolute;
+  left: 17%;
+  top: 36%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 170px;
+  animation: type 2s steps(40, end) forwards;
+}
+.container .cover1 {
+  /* border: 1px solid red; */
+  width: 1300px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-left: -650px;
+  overflow: hidden;
+  animation: shring-animation 1.5s steps(9, end) 2s forwards, blink 0.5s step-end infinite alternate;
+  border-right: 1px solid orange;
+  opacity: 0;
+}
+.container .cover2 {
+  /* border: 1px solid red; */
+  width: 450px;
+  position: absolute;
+  top: 55%;
+  right: 15.8%;
+  overflow: hidden;
+  animation: shring-animation 2s steps(14, end) 4s forwards, blink 0.5s step-end infinite alternate;
+  border-right: 1px solid orange;
+  opacity: 0;
+}
+.container .img1 {
+  opacity: 1;
+  font-family: "Work Sans", sans-serif;
+  margin: 0 auto auto auto;
+  font-size: 100px;
+  width: 1300px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+}
+.container .img2 {
+  opacity: 1;
+  font-family: "Work Sans", sans-serif;
+  margin: 0 auto auto auto;
+  font-size: 100px;
+  width: 450px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+}
+
+.scroll-downs {
+  position: absolute;
+
+  right: 0;
+  bottom: 60px;
+  left: 0;
+  margin: auto;
+  opacity: 0;
+  width: 34px;
+  height: 55px;
+  animation: goOut 1s 5s forwards;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+@keyframes goOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+@keyframes shring-animation {
+  0% {
+    background-position: 0 0;
+    opacity: 0;
+    width: 0;
+  }
+  1% {
+    background-position: 0 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  50% {
+    background-position: 150px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+  100% {
+    background-position: 400px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1%,
+  99% {
+    border-right: 1px solid orange;
+  }
+  100% {
+    border-right: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
