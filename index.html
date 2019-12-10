@@ -923,7 +923,7 @@
             }
             console.log(positions)
             //得到每頁面的高度相應的高度
-            console.log(heights)
+            console.log(heights[0])
             //個別頁面的高度
 
             console.log(positionActive)
@@ -1012,77 +1012,77 @@
 
                 if (scrollVal > positions[0] && positions[2] > scrollVal) {
                     console.log(2)
-                    console.log(`${Math.abs(1950 - scrollVal)}`)
+                    console.log(`${Math.abs(heights[0]*2 - scrollVal)}`)
                     $(".img_page2_1").css({
-                        "opacity": `${1 - Math.abs(1950 - scrollVal) / positions[0]}`,
-                        "transform": 'translateX(' + 200 * `${Math.abs(1950 - scrollVal) / positions[0]} ` + 'px)'
+                        "opacity": `${1 - Math.abs(heights[0]*2 - scrollVal) / positions[0]}`,
+                        "transform": 'translateX(' + 200 * `${Math.abs(heights[0]*2 - scrollVal) / positions[0]} ` + 'px)'
 
                     })
                     $(".img_page2_2").css({
-                        "opacity": `${1 - Math.abs(1950 - scrollVal) / positions[0]}`,
-                        "transform": 'translateX(' + 300 * `${Math.abs(1950 - scrollVal) / positions[0]} ` + 'px)'
+                        "opacity": `${1 - Math.abs(heights[0]*2 - scrollVal) / positions[0]}`,
+                        "transform": 'translateX(' + 300 * `${Math.abs(heights[0]*2 - scrollVal) / positions[0]} ` + 'px)'
 
                     })
                     $(".img_page2_3").css({
-                        "opacity": `${1 - Math.abs(1950 - scrollVal) / positions[0]}`,
-                        "transform": 'translateX(' + 400 * `${Math.abs(1950 - scrollVal) / positions[0]} ` + 'px)'
+                        "opacity": `${1 - Math.abs(heights[0]*2 - scrollVal) / positions[0]}`,
+                        "transform": 'translateX(' + 400 * `${Math.abs(heights[0]*2 - scrollVal) / positions[0]} ` + 'px)'
 
                     })
                     $(".img_page2_4").css({
-                        "opacity": `${1 - Math.abs(1950 - scrollVal) / positions[0]}`,
-                        "transform": 'translateX(' + 500 * `${Math.abs(1950 - scrollVal) / positions[0]} ` + 'px)'
+                        "opacity": `${1 - Math.abs(heights[0]*2 - scrollVal) / positions[0]}`,
+                        "transform": 'translateX(' + 500 * `${Math.abs(heights[0]*2 - scrollVal) / positions[0]} ` + 'px)'
 
                     })
                     $(".img_page2_5").css({
-                        "opacity": `${1 - Math.abs(1950 - scrollVal) / positions[0]}`,
-                        "transform": 'translateX(' + 600 * `${Math.abs(1950 - scrollVal) / positions[0]} ` + 'px)'
+                        "opacity": `${1 - Math.abs(heights[0]*2 - scrollVal) / positions[0]}`,
+                        "transform": 'translateX(' + 600 * `${Math.abs(heights[0]*2 - scrollVal) / positions[0]} ` + 'px)'
 
                     })
                     $(".page2_span").css({
-                        "opacity": `${1 - Math.abs(1950 - scrollVal) / positions[0]}`,
-                        "transform": 'translateX(' + 600 * `${Math.abs(1950 - scrollVal) / positions[0]} ` + 'px)'
+                        "opacity": `${1 - Math.abs(heights[0]*2 - scrollVal) / positions[0]}`,
+                        "transform": 'translateX(' + 600 * `${Math.abs(heights[0]*2 - scrollVal) / positions[0]} ` + 'px)'
 
                     })
                 }
                 if (scrollVal > positions[1] && positions[3] > scrollVal) {
-                    console.log(Math.abs(2921 - scrollVal))
+                    console.log(Math.abs(heights[0]*3 - scrollVal))
                     $(".moveTop").css({
-                        "opacity": `${1 - Math.abs(2921 - scrollVal) / positions[0]}`,
-                        "transform": 'translateY(' + -600 * `${Math.abs(2921 - scrollVal) / positions[0]} ` + 'px)'
+                        "opacity": `${1 - Math.abs(heights[0]*3 - scrollVal) / positions[0]}`,
+                        "transform": 'translateY(' + -600 * `${Math.abs(heights[0]*3 - scrollVal) / positions[0]} ` + 'px)'
                     })
                     $(".moveLeft").css({
-                        "opacity": `${1 - Math.abs(2921 - scrollVal) / positions[0]}`,
-                        "transform": 'translateX(' + -600 * `${Math.abs(2921 - scrollVal) / positions[0]} ` + 'px)'
+                        "opacity": `${1 - Math.abs(heights[0]*3 - scrollVal) / positions[0]}`,
+                        "transform": 'translateX(' + -600 * `${Math.abs(heights[0]*3 - scrollVal) / positions[0]} ` + 'px)'
 
                     })
                     $(".moveRight").css({
-                        "opacity": `${1 - Math.abs(2921 - scrollVal) / positions[0]}`,
-                        "transform": 'translateX(' + 600 * `${Math.abs(2921 - scrollVal) / positions[0]} ` + 'px)'
+                        "opacity": `${1 - Math.abs(heights[0]*3 - scrollVal) / positions[0]}`,
+                        "transform": 'translateX(' + 600 * `${Math.abs(heights[0]*3 - scrollVal) / positions[0]} ` + 'px)'
 
                     })
                     $(".page3_span").css({
-                        "opacity": `${1 - Math.abs(2921 - scrollVal) / positions[0]}`,
-                        "transform": 'translateX(' + 600 * `${Math.abs(2921 - scrollVal) / positions[0]} ` + 'px)'
+                        "opacity": `${1 - Math.abs(heights[0]*3 - scrollVal) / positions[0]}`,
+                        "transform": 'translateX(' + 600 * `${Math.abs(heights[0]*3 - scrollVal) / positions[0]} ` + 'px)'
 
                     })
                 }
                 if (scrollVal > positions[2] && positions[4] > scrollVal) {
-                    console.log(Math.abs(3892 - scrollVal))
+                    console.log(Math.abs(heights[0]*4 - scrollVal))
                     $(".page4_span").css({
-                        "opacity": `${1 - Math.abs(3892 - scrollVal) / positions[0]}`,
-                        "transform": 'translateX(' + 600 * `${Math.abs(3892 - scrollVal) / positions[0]} ` + 'px)'
+                        "opacity": `${1 - Math.abs(heights[0]*4 - scrollVal) / positions[0]}`,
+                        "transform": 'translateX(' + 600 * `${Math.abs(heights[0]*4 - scrollVal) / positions[0]} ` + 'px)'
                     })
 
                 }
                 if (scrollVal > positions[3] && positions[5] > scrollVal) {
-                    console.log(Math.abs(4863 - scrollVal))
+                    console.log(Math.abs(heights[0]*5 - scrollVal))
                     $(".page5_span").css({
-                        "opacity": `${1 - Math.abs(4863 - scrollVal) / positions[0]}`,
-                        "transform": 'translateX(' + 600 * `${Math.abs(4863 - scrollVal) / positions[0]} ` + 'px)'
+                        "opacity": `${1 - Math.abs(heights[0]*5 - scrollVal) / positions[0]}`,
+                        "transform": 'translateX(' + 600 * `${Math.abs(heights[0]*5 - scrollVal) / positions[0]} ` + 'px)'
                     })
                     $(".frame").css({
-                        "opacity": `${1 - Math.abs(4863 - scrollVal) / positions[0]}`,
-                        "transform": 'translateX(' + 1000 * `${Math.abs(4863 - scrollVal) / positions[0]} ` + 'px ) scale(1.8) '
+                        "opacity": `${1 - Math.abs(heights[0]*5 - scrollVal) / positions[0]}`,
+                        "transform": 'translateX(' + 1000 * `${Math.abs(heights[0]*5 - scrollVal) / positions[0]} ` + 'px ) scale(1.8) '
                     })
                 }
             });
